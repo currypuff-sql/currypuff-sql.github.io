@@ -1,0 +1,58 @@
+/* 3.1 Reset & Basics */
+* { margin:0; padding:0; box-sizing:border-box; }
+body, html { height:100%; font-family:sans-serif; }
+
+/* 3.2 Hero Section Full-Screen + Parallax */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.parallax-bg {
+  position: absolute; top:0; left:0; width:100%; height:100%;
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  transform: translateZ(0);
+  /* Rellax will adjust translateY for parallax */
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  top: 40%;
+  transform: translateY(-40%);
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #ff9f1c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover { animation: pulse 1s; }
+
+/* 3.3 Hotspot Icons */
+.hotspot {
+  position: absolute;
+  width: 3rem; height: 3rem;
+  background: rgba(255,159,28,0.9);
+  border-radius: 50%;
+  display: flex; align-items:center; justify-content:center;
+  color: white; cursor: pointer;
+}
+.hotspot-1 { top: 20%; left: 15%; }
+.hotspot-2 { top: 30%; right: 20%; }
+.hotspot-3 { bottom: 15%; left: 50%; }
+.hotspot:hover { animation: tada 0.8s; }
+
+/* 3.4 Overview Section */
+.overview {
+  padding: 4rem 2rem;
+  background: #f7f7f7;
+  text-align: center;
+}
+.overview h2 { margin-bottom: 1rem; }
+.overview p { max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; }

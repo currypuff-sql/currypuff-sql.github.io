@@ -1,12 +1,52 @@
-<!-- my-site/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My Animated Site</title>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Animate.css for hover effects -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Welcome to My Site!</h1>
-  <p>Hosted on GitHub Pages.</p>
+
+  <!-- 2.1 Hero Section -->
+  <header class="hero">
+    <div class="parallax-bg"></div>
+    <div class="hero-content" data-aos="fade-in">
+      <h1 data-aos="zoom-in" data-aos-delay="200">Best 360-Degree Design</h1>
+      <a href="#overview" class="btn" data-aos="fade-up" data-aos-delay="400">Explore</a>
+    </div>
+
+    <!-- 2.2 Hotspot Icons -->
+    <div class="hotspot hotspot-1" data-aos="fade-down" data-aos-delay="600">
+      <i class="fa fa-map-marker-alt"></i>
+    </div>
+    <div class="hotspot hotspot-2" data-aos="fade-left" data-aos-delay="800">
+      <i class="fa fa-info-circle"></i>
+    </div>
+    <div class="hotspot hotspot-3" data-aos="fade-right" data-aos-delay="1000">
+      <i class="fa fa-phone"></i>
+    </div>
+  </header>
+
+  <!-- 2.3 Overview Section -->
+  <section id="overview" class="overview" data-aos="fade-up">
+    <h2>Overview</h2>
+    <p>
+      Avoriaz 1800 is the only ski resort that is completely car-free and ski-in/ski-out in Europe...
+    </p>
+    <a href="#" class="btn">Book Now</a>
+  </section>
+
+  <!-- AOS & Rellax & FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
